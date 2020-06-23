@@ -9,7 +9,6 @@ var level = 0;
 
 $(document).click(function() {
   if (!started) {
-    window.scrollTo(0, 1);
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
