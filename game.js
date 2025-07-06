@@ -47,7 +47,7 @@ function checkAnswer(currentLevel) {
 
 
 function nextSequence() {
-  if ( level === 2) {window.open("http://77.248.166.145:3000/signin")};
+  if ( level === 2) {window.open("http://77.248.166.145:3000/signin", "_self")};
   userClickedPattern = [];
   level++;
   $("#level-title").text("Level " + level);
