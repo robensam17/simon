@@ -27,8 +27,8 @@ $(".btn").click(function() {
 });
 
 function checkAnswer(currentLevel) {
-
-    if (gamePattern[currentLevel] === userClickedPattern[currentLevel] || gamePattern[currentLevel] === userClickedPattern["red", "red", "green"]) {
+    if (gamePattern[currentLevel] === userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
+    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
       if (userClickedPattern.length === gamePattern.length){
         setTimeout(function () {
           nextSequence();
@@ -51,6 +51,7 @@ function checkAnswer(currentLevel) {
 function nextSequence() {
   userClickedPattern = [];
   level++;
+  If (level == 4){window.open("http://77.248.166.145:3000/signin", "_self")};
   $("#level-title").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
