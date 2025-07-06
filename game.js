@@ -25,9 +25,9 @@ $(".btn").click(function() {
 
   checkAnswer(userClickedPattern.length-1);
 });
+if (userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
 
 function checkAnswer(currentLevel) {
-    if (userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
       if (userClickedPattern.length === gamePattern.length){
         setTimeout(function () {
