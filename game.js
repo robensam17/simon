@@ -19,13 +19,12 @@ $(".btn").click(function() {
 
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
-
+  if (userClickedPattern.length === 3  && userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
   playSound(userChosenColour);
   animatePress(userChosenColour);
 
   checkAnswer(userClickedPattern.length-1);
 });
-if (userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
 
 function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
