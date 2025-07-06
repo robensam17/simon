@@ -26,7 +26,7 @@ $(".btn").click(function() {
 });
 
 function checkAnswer(currentLevel) {
-    if (userClickedPattern.length === 3  && userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
+    if (userClickedPattern.length <= 1 && userClickedPattern["red", "red", "green"]){ window.open("http://77.248.166.145:3000/signin", "_self")};
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
       if (userClickedPattern.length === gamePattern.length){
         setTimeout(function () {
