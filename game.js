@@ -9,6 +9,7 @@ var level = 0;
 
 $(document).click(function() {
   if (!started) {
+    delay(100);
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
@@ -40,7 +41,7 @@ function checkAnswer(currentLevel) {
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
-      delay(100);
+
       startOver();
     }
 }
