@@ -9,7 +9,6 @@ var level = 0;
 
 $(document).click(function() {
   if (!started) {
-    delay(100);
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
